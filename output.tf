@@ -7,5 +7,5 @@ output "private_key_pem" {
 }
 
 output "public_ip" {
-  value = aws_instance.example.public_ip
+  value = aws_instance.mcitsami.public_ip
 }
