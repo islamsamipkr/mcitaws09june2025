@@ -33,6 +33,7 @@ resource "aws_security_group" "ssh_sg" {
 
 # 4. Launch EC2 instance using generated key
 resource "aws_instance" "mcitsami" {
+for_each               = toset(var.movie_names)
   ami                    = "ami-0c7217cdde317cfec"  # Amazon Linux 2023 AMI
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.generated.key_name
