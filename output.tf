@@ -10,7 +10,7 @@ output "public_ip" {
   value = aws_instance.mcitsami.public_ip
 }
 output "public_ips" {
-  description = "Public IPs of EC2 instances"
+  description = "Public IPs of all EC2 instances"
   value = {
     for name, instance in aws_instance.mcitsami :
     name => instance.public_ip
