@@ -6,10 +6,10 @@ variable "AWS_CLIENT_SECRET"{
 }
 variable "movie_names" {
   default = [
-    "Inception",
-    "Interstellar",
-    "The_Dark_Knight",
-    "Tenet",
-    "Dunkirk"
+    "CrimsonFalcon",
+    "OceanWhisper",
+    "SolarBloom",
+    "IronLynx",
+    "VelvetStorm"
   ]
 }
